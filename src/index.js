@@ -1,11 +1,13 @@
 module.exports = function reverse (n) {
-    function solution(n){
-        if (n > 0) {
-            return n.toString().split('').reverse().join('');
-         } else {
-            return n.toString().split('').reverse().join('').slice(0, -1);
-         }
-      }
+    
+        let reverseStr =  n.toString().split('').reverse()
+        let res = ''
+        let resNumber = reverseStr.forEach(element => {
+          res+= +element
+          console.log(typeof(res))
+        });
+        return +res
+      
       
         
 }
